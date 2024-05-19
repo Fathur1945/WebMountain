@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lhotse Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./lhotse.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Lhotse</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Lhotse</h2>
+        <ol>
+            <li>Ketinggian</li>
+            <p>Lhotse adalah puncak tertinggi keempat di dunia dengan ketinggian mencapai 8.516 meter di atas permukaan laut..
+            </p> <br>
+
+            <li>Lokasi</li>
+            <p>
+                Gunung Lhotse terletak di perbatasan antara Nepal dan Tibet, sangat dekat dengan Gunung Everest. Kedua gunung ini terletak di wilayah Khumbu di Nepal.
+            </p> <br>
+
+            <li> Hubungan dengan Gunung Everest</li>
+            <p>Lhotse terletak sangat dekat dengan Gunung Everest, keduanya berbagi Jalur Khumbu sebagai rute pendakian dan Lhotse Face, sebuah dinding es besar, adalah bagian dari rute menuju puncak Everest dari sisi selatan.</p><br>
+
+            <li>Tiga Puncak</li>
+            <p>Lhotse memiliki tiga puncak: Lhotse Main (puncak utama), Lhotse Shar, dan Lhotse Middle.</p><br>
+
+            <li>Pendakian pertama</li>
+            <p>Puncak utama Lhotse pertama kali didaki pada 18 Mei 1956 oleh Fritz Luchsinger dan Ernst Reiss, tim dari Swiss.</p><br>
+
+            <li>Rute Pendakian</li>
+            <p>Rute pendakian utama ke puncak Lhotse melewati bagian selatan dari rute yang juga digunakan untuk mendaki Everest.</p><br>
+
+            <li>Puncak Lhotse Shar dan Lhotse Middle</li>
+            <p>Puncak Lhotse Shar (8.383 meter) pertama kali didaki oleh anggot tim ekspedisi Swiss pada tahun 1956. Sementara itu, Lhotse Middle (8.410 meter) baru berhasil didaki pada tahun 2001 oleh pemanjat Rusia.</p><br>
+
+            <li>kecelakaan pendakian</li>
+            <p> Seperti banyak gunung tinggi lainnya, Lhotse memiliki risiko tinggi kecelakaan dan tantangan cuaca ekstrem yang dapat menyulitkan pendaki.</p><br>
+
+            <li>Keindahan Pemandangan</li>
+            <p>Pendaki Gunung Lhotse menikmati pemandangan spektakuler pegunungan Himalaya di sekitar area tersebut, termasuk pemandangan Gunung Everest.</p><br>
+
+            <li>Popularitas</li>
+            <p>Karena kedekatannya dengan Gunung Everest, Lhotse juga populer di kalangan pendaki gunung, meskipun lebih sulit dibandingkan dengan gunung lain di sekitar wilayah tersebut.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinson Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./vinson.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Vinson</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount vinson</h2>
+        <ol>
+            <li>ketinggian </li>
+            <p> Gunung Vinson adalah puncak tertinggi di Antartika dengan ketinggian mencapai 4.892 meter di atas permukaan laut.
+            </p> <br>
+
+            <li>Lokasi</li>
+            <p>
+                Gunung Vinson terletak di Pegunungan Ellsworth, salah satu rangkaian pegunungan utama di Antartika.
+            </p> <br>
+
+            <li> Puncak Vinson</li>
+            <p>Nama puncak ini diambil dari nama Carl Vinson, seorang anggota Kongres Amerika Serikat yang mendukung eksplorasi Antartika..</p><br>
+
+            <li>Pendakian pertama</li>
+            <p>Puncak Vinson pertama kali berhasil didaki pada 18 Desember 1966 oleh tim ekspedisi Amerika yang dipimpin oleh Nicholas Clinch.</p><br>
+
+            <li>Iklim ekstrem</li>
+            <p>Gunung Vinson terletak di salah satu wilayah paling dingin dan terpencil di dunia. Suhu bisa mencapai -40 derajat Celsius bahkan lebih dingin, terutama selama musim dingin Antartika.</p><br>
+
+            <li>Aksesibilitas</li>
+            <p> Mendaki Gunung Vinson adalah tantangan besar karena lokasinya yang terpencil. Pendaki biasanya memulai perjalanan mereka dari Punta Arenas, Chili, dan terbang ke Union Glacier di Antartika..</p><br>
+
+            <li>Rute Pendakian</li>
+            <p>Rute pendakian yang paling umum adalah melalui jalur normal dari Branscomb Glacier. Rute ini relatif lebih aman daripada rute lainnya.</p><br>
+
+            <li>Fauna dan Flora</li>
+            <p>Antartika adalah benua dengan sangat sedikit flora dan fauna, sehingga pendaki biasanya tidak akan menemukan hewan atau tumbuhan selama pendakian Gunung Vinson.</p><br>
+
+            <li>Popularitas di Kalangan Pendaki</li>
+            <p>Meskipun terpencil, Gunung Vinson adalah salah satu dari Seven Summits, yaitu tujuh puncak tertinggi di setiap benua. Karena itu, gunung ini menarik minat pendaki dari seluruh dunia.</p><br>
+
+            <li>Keamanan</li>
+            <p> Karena tantangan alam yang keras dan cuaca yang tidak dapat diprediksi, pendaki perlu persiapan matang dan peralatan khusus untuk menghadapi pendakian Gunung Vinson. Keamanan adalah hal yang sangat penting dalam ekspedisi ini.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

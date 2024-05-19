@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Wijaya Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./jaya.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Jaya Wijaya</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Jaya Wijaya</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p> Gunung Jaya Wijaya terletak di Papua, Indonesia, di tengah Pegunungan Sudirman.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Gunung Jaya Wijaya memiliki ketinggian 4.884 meter (16.024 kaki), menjadikannya puncak tertinggi di Oseania.
+            </p> <br>
+
+            <li> Gunung tertinggi di Indonesia</li>
+            <p>Puncak ini adalah gunung tertinggi di Indonesia dan juga di antara puncak tertinggi di dunia.</p><br>
+
+            <li>Nama lain</li>
+            <p>Gunung ini dikenal dengan berbagai nama, termasuk Puncak Carstensz, yang dinamai menurut penjelajah Belanda Jan Carstenszoon, yang melihat puncak bersalju di dekat khatulistiwa pada tahun 1623.</p><br>
+
+            <li>Pendaki pertama</li>
+            <p>Pendakian pertama ke puncak dilakukan oleh Tim Pendakian Carstensz pada tahun 1962, dipimpin oleh Heinrich Harrer dari Austria.</p><br>
+
+            <li>Rute pendakian</li>
+            <p>Rute pendakian umumnya dimulai dari wilayah Timika, dan melibatkan perjalanan melewati hutan hujan tropis dan medan yang sulit.</p><br>
+
+            <li>Tantangan</li>
+            <p>Pendakian ke puncak ini dianggap sulit karena medan yang berat, kondisi cuaca yang berubah-ubah, dan tantangan logistik dalam mencapai lokasi tersebut.</p><br>
+
+            <li>Ekosistem</li>
+            <p> Gunung ini memiliki ekosistem yang unik, termasuk gletser tropis yang langka dan keanekaragaman hayati yang tinggi, termasuk spesies tanaman dan hewan endemik.</p><br>
+
+            <li>Gletser tropis</li>
+            <p>Puncak Jaya terkenal dengan gletser tropisnya yang semakin menurun akibat perubahan iklim. Gletser ini terletak di daerah sekitar puncak.</p><br>
+
+            <li>Signifikansi budaya</li>
+            <p> Gunung ini memiliki arti penting bagi masyarakat adat lokal Papua dan sering dianggap sebagai tempat suci.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

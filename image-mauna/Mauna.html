@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauna Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./Mauna.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Mauna</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Mauna</h2>
+        <ol>
+            <li>Ketinggian</li>
+            <p>Mauna Kea adalah gunung tertinggi di Hawaii dengan ketinggian mencapai 4.207 meter di atas permukaan laut. Namun, jika diukur dari dasar laut, Mauna Kea adalah gunung tertinggi di dunia, dengan ketinggian total sekitar 10.210 meter.
+            </p> <br>
+
+            <li>Lokasi</li>
+            <p>
+                Mauna Kea terletak di Pulau Hawai'i (juga dikenal sebagai Big Island), yang merupakan pulau terbesar di Kepulauan Hawaii.
+            </p> <br>
+
+            <li> Gunung Berapi</li>
+            <p>Mauna Kea adalah gunung berapi perisai yang tidak aktif. Gunung ini terbentuk oleh aktivitas vulkanik di bawah Samudera Pasifik dan telah mengalami berbagai tahap erupsi.</p><br>
+
+            <li>Observatorium Astronomi</li>
+            <p>Mauna Kea terkenal karena menjadi lokasi beberapa observatorium astronomi paling terkenal di dunia. Ketinggian gunung dan kondisi cuaca yang stabil menjadikannya tempat ideal untuk penelitian astronomi.</p><br>
+
+            <li>Ekosistem Beragam</li>
+            <p>Mauna Kea memiliki berbagai ekosistem, termasuk hutan hujan tropis di ketinggian rendah dan tundra alpin di ketinggian tinggi.</p><br>
+
+            <li>Kepentingan budaya</li>
+            <p>Mauna Kea dianggap sebagai tempat suci bagi masyarakat asli Hawaii. Gunung ini memiliki banyak makna spiritual dan budaya bagi masyarakat setempat.</p><br>
+
+            <li>Salju di puncak</li>
+            <p> Meskipun terletak di daerah tropis, Mauna Kea sering memiliki salju di puncaknya selama musim dingin karena ketinggiannya yang tinggi.</p><br>
+
+            <li>Danau dan habitat langka </li>
+            <p> Di puncak Mauna Kea terdapat beberapa danau gunung yang dikenal dengan habitat langka, termasuk beberapa spesies yang hanya ditemukan di wilayah tersebut..</p><br>
+
+            <li>Pariwisata dan Pendakian</li>
+            <p>Mauna Kea populer di kalangan wisatawan dan pendaki. Namun, pendakian ke puncak gunung membutuhkan izin karena kondisi cuaca yang bisa berubah-ubah dan risiko ketinggian.</p><br>
+
+            <li>Perlindungan Lingkungan</li>
+            <p>Karena kepentingan budaya, ilmiah, dan ekologisnya, ada upaya untuk melindungi Mauna Kea dari kerusakan lingkungan dan pembangunan yang berlebihan. Beberapa komunitas asli Hawaii telah menentang pembangunan observatorium baru di puncak gunung ini.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

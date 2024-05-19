@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matterhorn Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./Matterhorn.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text"> Matterhorn</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Matterhorn</h2>
+        <ol>
+            <li>Ketinggian</li>
+            <p>Gunung Matterhorn memiliki ketinggian 4.478 meter di atas permukaan laut, menjadikannya salah satu gunung paling terkenal di Pegunungan Alpen.
+            </p> <br>
+
+            <li>Lokasi</li>
+            <p>
+                Matterhorn terletak di perbatasan antara Swiss dan Italia, dekat kota Zermatt di Swiss dan Breuil-Cervinia di Italia.
+            </p> <br>
+
+            <li> Bentuk ikonik</li>
+            <p>Matterhorn terkenal karena bentuknya yang seperti piramida simetris dengan empat sisi terjal, menjadikannya salah satu gunung paling ikonik dan dikenal di dunia.</p><br>
+            
+            <li>Pendakian Pertama </li>
+            <p> Puncak Matterhorn pertama kali berhasil didaki pada 14 Juli 1865 oleh ekspedisi yang dipimpin oleh Edward Whymper. Namun, ekspedisi ini berakhir tragis karena empat dari tujuh anggota tim meninggal dalam perjalanan turun.</p><br>
+
+            <li>Pendakian populer</li>
+            <p> Meskipun menantang, pendakian Matterhorn sangat populer di kalangan pendaki gunung. Rute utama pendakian melalui jalur Hörnli Ridge di sisi timur gunung.</p><br>
+
+            <li>Sisi swiss dan italia</li>
+            <p>Matterhorn memiliki dua sisi utama, sisi Swiss dan Italia. Hörnli Ridge berada di sisi Swiss, sedangkan Lion Ridge terletak di sisi Italia.</p><br>
+
+            <li>Asal usul nama </li>
+            <p>Nama Matterhorn berasal dari bahasa Jerman, di mana "Matter" berarti padang rumput atau tanah, dan "Horn" berarti tanduk, yang mengacu pada bentuk gunung yang runcing.</p><br>
+
+            <li>Cuaca dan Kondisi Ekstrem</li>
+            <p>Gunung Matterhorn memiliki kondisi cuaca yang sangat berubah-ubah, dengan kemungkinan hujan salju tiba-tiba, kabut tebal, dan suhu ekstrem yang dapat mempersulit pendakian.</p><br>
+
+            <li>kecelakaan pendakian</li>
+            <p> Matterhorn dikenal sebagai gunung yang berbahaya untuk didaki, dan banyak pendaki mengalami cedera atau kematian selama ekspedisi mereka.</p><br>
+
+            <li>daya tarik wisata</li>
+            <p> Matterhorn adalah salah satu daya tarik utama untuk wisatawan di Swiss, baik untuk mendaki maupun hanya untuk menikmati pemandangan spektakuler gunung tersebut. Resor ski Zermatt di Swiss juga sangat populer di kalangan penggemar olahraga musim dingin.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

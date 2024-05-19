@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elbrus Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./elbrus.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Elbrus</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Elbrus</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p>Gunung Elbrus terletak di Kaukasus, Rusia, tepatnya di perbatasan antara republik Kabardino-Balkaria dan Karachay-Cherkessia.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Elbrus memiliki dua puncak utama; puncak barat adalah puncak tertinggi dengan ketinggian 5.642 meter (18.510 kaki), sementara puncak timur mencapai 5.621 meter (18.442 kaki).
+            </p> <br>
+
+            <li> Puncak tertinggi di Eropa</li>
+            <p>Gunung Elbrus adalah puncak tertinggi di benua Eropa.</p><br>
+
+            <li>Gunung berapi</li>
+            <p>Gunung Elbrus adalah gunung berapi yang sudah tidak aktif.</p><br>
+
+            <li>Pendaki pertama</li>
+            <p>Puncak barat pertama kali didaki oleh Florence Crauford Grove dan Peter Knubel pada tahun 1874, sedangkan puncak timur pertama kali didaki oleh Khoti Latiko, Khoti Shegay, dan Ivan Khoarov pada tahun 1868.</p><br>
+
+            <li>Rute pendakian populer</li>
+            <p>Rute selatan adalah rute pendakian paling populer menuju puncak Elbrus, meskipun ada juga rute lainnya seperti rute utara dan barat.</p><br>
+
+            <li>Musim pendakian terbaik</li>
+            <p>Musim pendakian terbaik untuk Gunung Elbrus adalah dari bulan Juni hingga September ketika cuaca lebih stabil.</p><br>
+
+            <li>Keindahan pemandangan</li>
+            <p> Puncak Elbrus menawarkan pemandangan yang menakjubkan dari Pegunungan Kaukasus, gletser, dan lembah-lembah di sekitarnya.</p><br>
+
+            <li>Resor ski</li>
+            <p>Gunung Elbrus merupakan destinasi populer untuk aktivitas ski dan snowboarding, dengan beberapa resor ski yang terletak di sekitarnya.</p><br>
+
+            <li>Tingkat kesulitan</li>
+            <p>Pendakian Gunung Elbrus dapat menantang karena ketinggian yang tinggi, kondisi cuaca yang berubah-ubah, dan medan yang berat, sehingga pendaki perlu mempersiapkan diri dengan baik.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./k2.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount K2</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount K2</h2>
+        <ol>
+            <li>Kedudukan</li>
+            <p>Gunung K2 terletak di Pegunungan Karakoram, yang merupakan bagian dari rentang Pegunungan Himalaya. Secara geografis, K2 terletak di perbatasan antara Pakistan dan Tiongkok (Wilayah Otonomi Xinjiang). Puncak K2 memiliki ketinggian 8.611 meter (28.251 kaki) di atas permukaan laut, menjadikannya gunung tertinggi kedua di dunia.
+            </p> <br>
+
+            <li>Tinggi</li>
+            <p>
+                K2 memiliki ketinggian puncak yang mencapai 8.611 meter (28.251 kaki) di atas permukaan laut, menjadikannya salah satu puncak tertinggi di dunia. Tingginya ini menjadikannya tantangan ekstrem bagi para pendaki gunung.
+            </p> <br>
+
+            <li>Nama</li>
+            <p>Meskipun dikenal sebagai K2, gunung ini sebenarnya belum diberi nama lokal yang dikenal secara umum oleh penduduk setempat. Nama "K2" diberikan oleh Survei Geografis Inggris pada awal abad ke-20. Di wilayah Pakistan, gunung ini dikenal sebagai "Chogori" yang berarti "Gunung Besar".</p><br>
+
+            <li>Pendakian</li>
+            <p>Pendakian ke K2 adalah salah satu tantangan paling berat bagi para pendaki gunung. Jalur pendakian dikenal karena kesulitannya yang tinggi dan bahaya yang melibatkan. Faktor-faktor seperti kondisi cuaca ekstrem, lereng yang curam, dan seringnya badai salju menjadikannya pendakian yang sangat berisiko.</p><br>
+
+            <li>Pertama Kali Diturunkan</li>
+            <p>Puncak K2 pertama kali berhasil dicapai pada tanggal 31 Juli 1954 oleh ekspedisi Italia yang dipimpin oleh Ardito Desio. Puncak ini dicapai oleh dua pendaki, Achille Compagnoni dan Lino Lacedelli.</p><br>
+
+            <li>Tingkat Kematian</li>
+            <p>K2 dikenal sebagai salah satu gunung paling mematikan di dunia. Tingkat kematian di antara pendaki yang mencoba menaklukkannya jauh lebih tinggi dibandingkan dengan Gunung Everest. Alasan untuk tingkat kematian yang tinggi termasuk jalur yang lebih sulit dan kondisi cuaca yang ekstrem.</p><br>
+
+            <li>Rute Pendakian</li>
+            <p>Jalur pendakian yang paling umum adalah melalui sisi Pakistan. Rute pendakian terkenalnya adalah Jalur Abruzzi, yang dinamai setelah ekspedisi Italia yang menggunakannya untuk pendakian pertama mereka</p><br>
+
+            <li>Batas Wilayah</li>
+            <p>Sebagian besar wilayah sekitar Gunung K2 merupakan daerah terpencil dan sulit diakses. Hal ini membuat pendakian menjadi lebih sulit karena kurangnya infrastruktur pendukung dan layanan penyelamat yang terbatas.</p><br>
+
+            <li>Keindahan Alam</li>
+            <p> Meskipun tantangan pendakian yang berat, Gunung K2 menawarkan pemandangan alam yang spektakuler. Para pendaki sering kali disuguhi pemandangan pegunungan yang megah dan lembah yang indah, menjadikannya tujuan yang menarik bagi pecinta alam.</p><br>
+
+            <li>Konservasi</li>
+            <p>Wilayah sekitar Gunung K2 merupakan daerah konservasi yang penting. Perubahan iklim dan aktivitas manusia telah menyebabkan perubahan signifikan dalam lingkungan alaminya. Oleh karena itu, upaya konservasi terus dilakukan untuk melindungi ekosistem yang rapuh di sekitarnya.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

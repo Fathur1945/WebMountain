@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuji Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./fuji.css">
+</head>
+<body>
+    <section>
+        <img src="./aaa.jpg" id="bg">
+        <h2 id="text">Mount Fuji</h2>
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./ccc.png" id="mountain_left" width="100px">
+        <img src="./ddd.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Fuji</h2>
+        <ol>
+            <li>Gunung Berapi Tertinggi di Jepang</li>
+            <p>Gunung Fuji tidak hanya menjadi landmark geografis yang penting di Jepang, tetapi juga memiliki peran penting dalam sejarah dan budaya negara tersebut. Puncaknya yang menonjol menjadikannya landmark yang mudah dikenali dari jarak jauh, dan sering menjadi subjek dalam seni dan sastra Jepang.</p> <br>
+                
+            <li>Puncak Gunung yang Berapi Tunggal</li>
+            <p>
+                Meskipun Jepang memiliki banyak gunung berapi, Gunung Fuji adalah gunung berapi tunggal terbesar di negara tersebut.
+            </p> <br>
+
+            <li>Warisan Dunia UNESCO</li>
+            <p>Pengakuan Gunung Fuji sebagai Situs Warisan Dunia UNESCO pada tahun 2013 menyoroti pentingnya gunung ini dalam konteks kekayaan alam dan budaya dunia. Pengakuan tersebut memperkuat kesadaran akan nilai penting Gunung Fuji sebagai aset global yang harus dilindungi dan dilestarikan.</p><br>
+
+            <li>Pendakian Populer</li>
+            <p>Pendakian Gunung Fuji adalah pengalaman yang populer di kalangan penduduk setempat dan turis internasional. Musim pendakian berlangsung terutama selama musim panas, ketika jalur pendakian resmi dibuka. Meskipun rute-rute tersebut memiliki fasilitas yang memadai, pendakian tetap menantang karena ketinggian dan cuaca yang tidak dapat diprediksi.</p><br>
+
+            <li>Gelombang Selama Musim Panas</li>
+            <p> Pemandangan awan yang indah yang sering terlihat di sekitar puncak Gunung Fuji selama musim panas, yang dikenal sebagai "laut awan" atau "unzen," adalah fenomena alam yang menakjubkan. Ini menciptakan lanskap yang spektakuler dan menjadi daya tarik tambahan bagi para pendaki dan wisatawan.</p><br>
+
+            <li>Tempat Ibadah</li>
+            <p>Gunung Fuji telah lama dianggap sebagai tempat suci dalam kepercayaan Shinto dan Buddhisme di Jepang. Sejumlah kuil dan kuil kecil terletak di lereng gunung, yang menjadi tempat ziarah dan persembahan bagi orang Jepang.</p><br>
+
+            <li>Lima Rute Pendakian</li>
+            <p>Ada lima rute pendakian yang berbeda menuju puncak Gunung Fuji. Rute-rute ini berbeda dalam kesulitan dan pemandangan yang ditawarkan.</p><br>
+
+            <li>Gunung Berapi Aktif</li>
+            <p>Meskipun tidak aktif dalam beberapa waktu terakhir, Gunung Fuji tetap dianggap sebagai gunung berapi aktif dan terus dipantau oleh para ilmuwan untuk tanda-tanda aktivitas vulkanik.</p><br>
+
+            <li>Kawah yang Indah</li>
+            <p>Kawah besar di puncak Gunung Fuji merupakan sisa dari letusan gunung berapi sebelumnya dan menjadi objek wisata yang populer bagi para pendaki. Selain itu, kawah ini juga menjadi subjek penting dalam penelitian ilmiah tentang aktivitas vulkanik dan sejarah geologis gunung tersebut.</p><br>
+
+            <li>Simbol Budaya</li>
+            <p>Selama berabad-abad, Gunung Fuji telah menjadi simbol budaya yang penting bagi masyarakat Jepang. Keberadaannya telah memengaruhi seni, sastra, agama, dan kehidupan sehari-hari orang Jepang, serta menjadi inspirasi bagi banyak orang di seluruh dunia.</p><br>
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

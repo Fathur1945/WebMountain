@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilimanjaro Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./kilimanjaro.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Kilimanjaro</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount kilimajaro</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p>Gunung Kilimanjaro terletak di Tanzania, Afrika Timur, dekat perbatasan dengan Kenya.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Kilimanjaro adalah gunung tertinggi di Afrika dengan ketinggian 5.895 meter (19.341 kaki).
+            </p> <br>
+
+            <li> Gunung Berapi</li>
+            <p>Kilimanjaro adalah gunung berapi yang terdiri dari tiga kawah utama: Kibo, Mawenzi, dan Shira. Puncak Kibo adalah yang tertinggi dan memiliki kawah vulkanik yang luas.</p><br>
+
+            <li>Pendaki pertama</li>
+            <p>Pendakian pertama ke puncak Kibo dilakukan oleh Hans Meyer dan Ludwig Purtscheller pada tahun 1889.</p><br>
+
+            <li>Rute Pendakian</li>
+            <p>Ada tujuh rute utama pendakian ke puncak Kilimanjaro, di antaranya adalah Rute Marangu, Machame, dan Lemosho. Masing-masing rute menawarkan pengalaman pendakian yang berbeda.</p><br>
+
+            <li>Musim pendakian terbaik</li>
+            <p>Waktu terbaik untuk mendaki Kilimanjaro adalah pada musim kering, yaitu dari Januari hingga Maret dan Juni hingga Oktober.</p><br>
+
+            <li>Iklim</li>
+            <p>Kilimanjaro memiliki iklim yang bervariasi, mulai dari iklim hutan hujan di kaki gunung hingga iklim dingin di puncak dengan salju abadi.</p><br>
+
+            <li>Keidahan pemandangan</li>
+            <p>Kilimanjaro menawarkan pemandangan alam yang beragam, termasuk hutan tropis, sabana, dan puncak bersalju.</p><br>
+
+            <li>daya tarik wisata</li>
+            <p>Selain pendakian ke puncak, Gunung Kilimanjaro juga merupakan daya tarik wisata utama di Tanzania, menarik pengunjung dari seluruh dunia.</p><br>
+
+            <li>Kepentingan budaya</li>
+            <p>Gunung ini memiliki arti penting bagi masyarakat setempat, termasuk suku Chagga, dan dianggap sebagai gunung suci oleh beberapa masyarakat lokal.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

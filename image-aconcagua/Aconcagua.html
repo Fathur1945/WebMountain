@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./Aconcagua.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Aconcagua</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Aconcagua</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p>Gunung Aconcagua terletak di Provinsi Mendoza, Argentina, dekat perbatasan dengan Chili.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Puncak Aconcagua berada pada ketinggian 6.961 meter (22.838 kaki) di atas permukaan laut.
+            </p> <br>
+
+            <li> Tinggi</li>
+            <p>Aconcagua adalah gunung tertinggi di Amerika Selatan, dan juga merupakan puncak tertinggi di belahan barat dan selatan Bumi.</p><br>
+
+            <li>Taman Nasional</li>
+            <p>Aconcagua berada dalam wilayah Taman Nasional Aconcagua, yang dibentuk untuk melindungi flora dan fauna setempat serta pemandangan alamnya yang menakjubkan</p><br>
+
+            <li>Jenis Gunung</li>
+            <p>Aconcagua adalah gunung stratovolcano yang sudah tidak aktif.</p><br>
+
+            <li>Pendakian</li>
+            <p>Gunung ini populer di kalangan pendaki dan alpinis, meskipun tantangan utama pendakiannya adalah kondisi cuaca dan ketinggiannya yang ekstrem..</p><br>
+
+            <li>Rute Pendakian</li>
+            <p>Terdapat beberapa rute pendakian yang terkenal, seperti Rute Normal dan Rute Polandia.</p><br>
+
+            <li>Iklim</li>
+            <p>Gunung ini memiliki iklim yang keras, dengan suhu yang bisa turun hingga di bawah -30 derajat Celsius di ketinggian yang lebih tinggi.</p><br>
+
+            <li>Cuaca</li>
+            <p> Cuaca di Gunung Aconcagua bisa berubah-ubah dengan cepat, termasuk angin kencang dan badai salju.</p><br>
+
+            <li>Pemandangan</li>
+            <p>Dari puncak Aconcagua, pendaki dapat melihat pemandangan indah pegunungan Andes serta lembah-lembah di sekitarnya.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranier Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./rainer.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Rainer</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Rainer</h2>
+        <ol>
+            <li>Ketinggian</li>
+            <p>Gunung Rainier memiliki ketinggian 4.392 meter di atas permukaan laut, menjadikannya gunung tertinggi di negara bagian Washington dan di pegunungan Cascade.
+            </p> <br>
+
+            <li>lokasi</li>
+            <p>
+                Gunung Rainier terletak di Taman Nasional Gunung Rainier di negara bagian Washington, Amerika Serikat.
+            </p> <br>
+
+            <li> Gunung Berapi</li>
+            <p> Rainier adalah gunung berapi stratovolcano yang masih aktif. Gunung ini terakhir meletus sekitar 500 tahun yang lalu dan masih dipantau secara aktif untuk potensi erupsi di masa depan.</p><br>
+
+            <li>Gletser</li>
+            <p>Rainier memiliki lebih dari 25 gletser, menjadikannya gunung dengan gletser terbanyak di 48 negara bagian yang berdekatan di AS. Gletser terbesar adalah Gletser Emmons dan Gletser Carbon.</p><br>
+
+            <li>Pendakian Populer</li>
+            <p>Gunung Rainier populer di kalangan pendaki gunung. Rute paling umum adalah melalui Disappointment Cleaver dan Emmons Glacier, namun pendakian tetap menantang karena medan yang sulit dan cuaca yang tidak menentu.</p><br>
+
+            <li>Ekosistem Beragam</li>
+            <p>Gunung Rainier dikelilingi oleh berbagai jenis ekosistem, mulai dari hutan hujan lebat di ketinggian rendah hingga tundra alpin di ketinggian tinggi.</p><br>
+
+            <li>Kepentingan Budaya</li>
+            <p>Gunung Rainier dianggap sebagai tempat suci oleh beberapa suku asli Amerika di wilayah tersebut dan memiliki arti penting dalam budaya lokal.</p><br>
+
+            <li>Taman Nasional</li>
+            <p>Gunung Rainier merupakan bagian dari Taman Nasional Gunung Rainier, yang didirikan pada tahun 1899 dan menjadi taman nasional kelima di Amerika Serikat.</p><br>
+
+            <li>Cuaca Ekstrem</li>
+            <p>Cuaca di gunung ini dapat berubah dengan cepat, dengan hujan, salju, dan kabut yang sering terjadi. Kondisi cuaca yang ekstrim dapat menjadi hambatan bagi pendaki.</p><br>
+
+            <li>Keruntuhan dan Lahar</li>
+            <p>Karena aktivitas vulkanik dan gletser yang mencair, Gunung Rainier memiliki risiko bahaya keruntuhan dan lahar yang dapat mengancam pemukiman di sekitarnya. Program pemantauan vulkanik dan perencanaan darurat di wilayah tersebut tetap aktif untuk menjaga keselamatan penduduk.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

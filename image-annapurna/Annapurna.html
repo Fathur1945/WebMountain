@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annapurna Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./Annapurna.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Annapurna</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount annapurna</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p> Gunung Annapurna terletak di Nepal, tepatnya di wilayah tengah negara itu.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Puncak Annapurna I, yang merupakan puncak tertinggi di jajaran gunung ini, memiliki ketinggian 8.091 meter (26.545 kaki).
+            </p> <br>
+
+            <li> Bagian dari Pegunungan</li>
+            <p>Annapurna adalah bagian dari Pegunungan Himalaya.</p><br>
+
+            <li>Pendaki Pertama</li>
+            <p>Annapurna I pertama kali didaki pada 3 Juni 1950 oleh Maurice Herzog dan Louis Lachenal, keduanya dari Prancis. Annapurna I adalah puncak delapan ribuan pertama yang berhasil didaki oleh manusia.</p><br>
+
+            <li>Rute Pendakian</li>
+            <p>Beberapa rute populer untuk mendaki Gunung Annapurna, termasuk Jalur Annapurna Sanctuary dan Annapurna Circuit..</p><br>
+
+            <li>Tingkat Kesulitan</li>
+            <p>Pendakian ke Annapurna I dianggap sangat sulit dan berbahaya. Tingkat kematian pendaki di gunung ini adalah salah satu yang tertinggi di antara semua gunung delapan ribuan.</p><br>
+
+            <li>Musim pendakian terbaik</li>
+            <p> Waktu terbaik untuk mendaki Annapurna adalah selama musim semi (Maret - Mei) dan musim gugur (Oktober - November) ketika cuaca lebih stabil.</p><br>
+
+            <li>Pemandangan</li>
+            <p>Gunung Annapurna menawarkan pemandangan indah dari pegunungan di sekitarnya, termasuk puncak-puncak tinggi dan lembah yang menakjubkan.</p><br>
+
+            <li>Jalur trekking populer</li>
+            <p>Trekking di sekitar kawasan Annapurna sangat populer, terutama Jalur Annapurna Circuit yang membawa pendaki melintasi berbagai puncak, lembah, dan desa-desa di sekitar gunung.</p><br>
+
+            <li>Nama</li>
+            <p>Nama "Annapurna" berasal dari bahasa Sanskerta dan berarti "Dewi kesuburan dan makanan" dalam mitologi Hindu. Gunung ini juga dihormati sebagai puncak suci oleh penduduk setempat.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

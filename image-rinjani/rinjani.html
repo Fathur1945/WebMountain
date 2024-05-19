@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinjani Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./rinjani.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Rinjani</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Rinjani</h2>
+        <ol>
+            <li>Ketinggian</li>
+            <p>Gunung Rinjani adalah gunung tertinggi kedua di Indonesia dengan ketinggian mencapai 3.726 meter di atas permukaan laut.
+            </p> <br>
+
+            <li>Lokasi</li>
+            <p>
+                Gunung Rinjani terletak di Pulau Lombok, Nusa Tenggara Barat, Indonesia.
+            </p> <br>
+
+            <li> Gunung Berapi</li>
+            <p>Rinjani adalah gunung berapi stratovolcano yang masih aktif. Letusan terakhirnya terjadi pada tahun 2015 dan 2016.</p><br>
+
+            <li>Danau Segara Anak</li>
+            <p>Gunung Rinjani memiliki danau kawah yang disebut Danau Segara Anak. Danau ini terkenal dengan warna airnya yang biru cerah dan ukurannya yang luas.</p><br>
+
+            <li>kepentingan budaya</li>
+            <p> Gunung Rinjani memiliki nilai budaya dan spiritual bagi masyarakat setempat, terutama Suku Sasak dan Suku Bali. Gunung ini dianggap sebagai tempat suci dan sering dijadikan lokasi upacara adat.</p><br>
+
+            <li>Pendakian populer</li>
+            <p>Gunung Rinjani sangat populer di kalangan pendaki gunung, baik dari dalam maupun luar negeri. Jalur pendakian utama biasanya dimulai dari desa Sembalun dan Senaru</p><br>
+
+            <li>Ekosistem Beragam</li>
+            <p>Rinjani memiliki ekosistem yang beragam, mulai dari hutan tropis, padang rumput, hingga tundra alpin. Ini memberikan habitat bagi berbagai flora dan fauna, termasuk spesies endemik.</p><br>
+
+            <li>Pemandangan Menakjubkan</li>
+            <p>Pendaki Rinjani dapat menikmati pemandangan spektakuler dari puncak gunung, termasuk Danau Segara Anak, gunung-gunung sekitar, dan pemandangan Pulau Lombok dari ketinggian.</p><br>
+
+            <li>Perlindungan dan Konservasi</li>
+            <p>Rinjani dilindungi sebagai bagian dari Taman Nasional Gunung Rinjani, yang didirikan untuk melestarikan keanekaragaman hayati dan keindahan alam gunung tersebut.</p><br>
+
+            <li>Bahaya Erupsi</li>
+            <p>Karena statusnya sebagai gunung berapi aktif, Gunung Rinjani tetap menjadi objek pemantauan oleh para ahli vulkanologi untuk memastikan keamanan masyarakat setempat dan wisatawan.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

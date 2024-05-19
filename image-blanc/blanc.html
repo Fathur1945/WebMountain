@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./blanc.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Blanc</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount blanc</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p>Gunung Blanc terletak di perbatasan Prancis dan Italia, dan merupakan bagian dari Pegunungan Alpen.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Mont Blanc adalah puncak tertinggi di Eropa Barat, dengan ketinggian mencapai 4.810 meter (15.781 kaki).
+            </p> <br>
+
+            <li> Nama lain</li>
+            <p> Gunung ini juga dikenal sebagai "Gunung Putih" karena puncaknya yang selalu tertutup salju.</p><br>
+
+            <li>Pendaki pertama</li>
+            <p>Pendakian pertama ke puncak Mont Blanc dilakukan oleh Jacques Balmat dan Michel-Gabriel Paccard pada tahun 1786..</p><br>
+
+            <li>Rute pendakian</li>
+            <p>Rute pendakian paling populer menuju puncak Mont Blanc adalah Rute Gouter dan Rute 3 Mont Blanc.</p><br>
+
+            <li>Musim pendakian terbaik</li>
+            <p>Musim pendakian terbaik adalah dari bulan Juni hingga September ketika cuaca relatif stabil.</p><br>
+
+            <li>Keindahan pemandangan</li>
+            <p> Mont Blanc menawarkan pemandangan pegunungan Alpen yang menakjubkan, dengan lembah-lembah, gletser, dan puncak-puncak gunung lainnya.</p><br>
+
+            <li>Daya tarik wisata</li>
+            <p>Selain pendakian, Gunung Blanc menjadi daya tarik wisata untuk aktivitas lain seperti hiking, ski, dan paragliding.</p><br>
+
+            <li>Tantangan</li>
+            <p>Pendakian ke puncak Mont Blanc membutuhkan kemampuan mendaki yang baik karena medan yang sulit dan risiko longsoran salju.</p><br>
+
+            <li>Konservasi</li>
+            <p>Daerah sekitar Mont Blanc memiliki berbagai taman nasional dan kawasan lindung untuk melindungi keindahan alam dan keanekaragaman hayati kawasan tersebut.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

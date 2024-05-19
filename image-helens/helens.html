@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Helens Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./helens.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">St. Helens </h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount St. Helens </h2>
+        <ol>
+            <li>Lokasi</li>
+            <p>Gunung St. Helens terletak di negara bagian Washington, Amerika Serikat.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Saat ini, Gunung St. Helens memiliki ketinggian sekitar 2.550 meter (8.366 kaki). Sebelum letusan besar pada tahun 1980, gunung ini memiliki ketinggian 2.950 meter (9.677 kaki).
+            </p> <br>
+
+            <li> Gunung berapi aktif</li>
+            <p>Gunung St. Helens adalah gunung berapi aktif dan salah satu gunung berapi paling terkenal di Amerika Serikat.</p><br>
+
+            <li>Letusan terkenal</li>
+            <p>Letusan besar terakhir terjadi pada 18 Mei 1980. Letusan ini adalah salah satu letusan gunung berapi paling mematikan dan merusak di sejarah Amerika Serikat.</p><br>
+
+            <li>Akibat letusan 1980</li>
+            <p>Letusan ini mengakibatkan kerusakan besar, termasuk hilangnya puncak gunung, longsoran puing vulkanik, dan lahar yang merusak lingkungan sekitar.</p><br>
+
+            <li>Kawah baru</li>
+            <p>Letusan 1980 menciptakan kawah baru di puncak gunung, yang kini menjadi daya tarik wisata.</p><br>
+
+            <li>Rute pendakian</li>
+            <p>Salah satu rute pendakian paling populer adalah Rute South Climb, yang menawarkan pemandangan spektakuler dan akses ke kawah.</p><br>
+
+            <li>Ekosistem</li>
+            <p>Ekosistem di sekitar Gunung St. Helens sedang dalam tahap pemulihan, dengan beragam spesies tanaman dan hewan yang kembali setelah letusan 1980.</p><br>
+
+            <li>Pemantauan</li>
+            <p>Aktivitas vulkanik di Gunung St. Helens dipantau secara ketat oleh para ilmuwan untuk mengantisipasi letusan di masa depan.</p><br>
+
+            <li>Daya tarik wisata</li>
+            <p>Kawasan sekitar Gunung St. Helens adalah tujuan wisata yang populer untuk hiking, pendakian, dan eksplorasi kawah vulkanik serta lanskap vulkanik lainnya.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

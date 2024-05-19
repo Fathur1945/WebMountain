@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denali Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./denali.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Denali</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Denali</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p> Gunung Denali terletak di Alaska, Amerika Serikat, dan merupakan puncak tertinggi di Amerika Utara.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Denali memiliki ketinggian 6.190 meter (20.310 kaki).
+            </p> <br>
+
+            <li> Nama lain</li>
+            <p>Gunung ini sebelumnya dikenal sebagai Gunung McKinley, namun pada tahun 2015, namanya dikembalikan menjadi Denali, yang berarti "Yang Agung" dalam bahasa suku asli Athabaskan.</p><br>
+
+            <li>Bagian dari Pegunungan</li>
+            <p>Denali adalah bagian dari Pegunungan Alaska Range.</p><br>
+
+            <li>Pendaki pertama</li>
+            <p>Pendakian pertama ke puncak Denali dilakukan oleh Hudson Stuck, Harry Karstens, Walter Harper, dan Robert Tatum pada tahun 1913.</p><br>
+
+            <li>Rute pendakian</li>
+            <p> Rute West Buttress adalah rute pendakian paling populer menuju puncak Denali. Rute ini dikenal sebagai jalur yang paling aman.</p><br>
+
+            <li>Musim pendakian terbaik</li>
+            <p>Musim pendakian terbaik adalah dari Mei hingga Juli ketika cuaca relatif stabil.</p><br>
+
+            <li>Iklim</li>
+            <p>Denali memiliki iklim yang sangat ekstrem, dengan suhu yang bisa mencapai di bawah -50 derajat Celsius dan angin kencang.</p><br>
+
+            <li>DTaman Nasional Denali</li>
+            <p>Gunung Denali berada di dalam Taman Nasional dan Cagar Alam Denali, yang dikenal dengan keindahan alamnya dan beragam kehidupan liar seperti beruang grizzly, karibu, dan serigala.</p><br>
+
+            <li>Tingkat kesulitan</li>
+            <p>Pendakian Denali dianggap sebagai pendakian yang menantang, membutuhkan keterampilan teknis dan pengalaman mendaki yang signifikan, terutama karena ketinggian dan cuaca ekstrem.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>

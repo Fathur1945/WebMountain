@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesuvius Mountain</title>
+    <link rel="stylesheet" type="text/css" href="./Vesuvius.css">
+</head>
+<body>
+    <section>
+        <img src="./bg.jpg" id="bg">
+        <h2 id="text">Mount Vesuvius</h2>
+        <img src="./man.png" id="man">
+        <img src="./clouds_1.png" id="clouds1">
+        <img src="./clouds_2.png" id="clouds2">
+        <img src="./mountain_left.png" id="mountain_left">
+        <img src="./mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Vesuvius</h2>
+        <ol>
+            <li>Lokasi</li>
+            <p>Gunung Vesuvius terletak di Italia selatan, di dekat kota Napoli. Ini adalah satu-satunya gunung berapi aktif di daratan Eropa yang meletus dalam 100 tahun terakhir.
+            </p> <br>
+
+            <li>Ketinggian</li>
+            <p>
+                Ketinggian Gunung Vesuvius saat ini adalah sekitar 1.281 meter di atas permukaan laut. Tinggi ini dapat berubah setelah setiap letusan karena aktivitas vulkanik
+            </p> <br>
+
+            <li> Letusan terkenal</li>
+            <p>Gunung Vesuvius terkenal karena letusannya yang dahsyat pada tahun 79 M, yang menghancurkan kota-kota kuno Pompeii dan Herculaneum. Peristiwa ini menyebabkan kematian ribuan orang dan mengubur kota-kota tersebut di bawah lapisan tebal abu vulkanik.</p><br>
+
+            <li>Aktivitas Vulkanik</li>
+            <p> Vesuvius adalah gunung berapi yang aktif dan berbahaya. Letusan terakhir terjadi pada tahun 1944, tetapi gunung ini tetap dipantau secara ketat oleh para ilmuwan karena risikonya yang tinggi.</p><br>
+
+            <li>Kawah</li>
+            <p>Vesuvius memiliki kawah besar yang terbentuk akibat letusan-letusan besar sebelumnya. Kawah ini menjadi pusat aktivitas vulkanik gunung tersebut.</p><br>
+
+            <li>Taman nasional</li>
+            <p>Gunung Vesuvius dan sekitarnya merupakan bagian dari Taman Nasional Vesuvius, yang didirikan pada tahun 1995. Taman ini melindungi keanekaragaman hayati gunung dan lingkungan sekitarnya.</p><br>
+
+            <li>Pendakian populer</li>
+            <p> Wisatawan dapat mendaki hingga kawah gunung ini dan menikmati pemandangan spektakuler dari puncak. Jalur pendakian umum dimulai dari stasiun kereta api Herculaneum atau Pompeii.</p><br>
+
+            <li>Risiko untuk Penduduk Lokal</li>
+            <p>Ada jutaan orang yang tinggal di sekitar kawasan gunung ini, yang dikenal sebagai "zona merah" karena risiko tinggi jika terjadi letusan besar.</p><br>
+
+            <li>Pengawasan Vulcanologi</li>
+            <p>vesuvius dipantau oleh Institut Vulcanologi Italia, yang memantau aktivitas seismik, gas vulkanik, dan deformasi tanah untuk memberikan peringatan dini kepada masyarakat setempat.</p><br>
+
+            <li>Makna Sejarah dan Budaya</li>
+            <p>Gunung Vesuvius memiliki makna penting dalam sejarah dan budaya Italia. Letusannya pada tahun 79 M memberikan wawasan yang tak ternilai tentang kehidupan sehari-hari masyarakat Romawi pada masa itu berkat penggalian arkeologi di Pompeii dan Herculaneum.</p><br>
+
+        </ol>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>
